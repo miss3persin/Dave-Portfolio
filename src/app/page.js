@@ -1,10 +1,13 @@
 import React from 'react'
+import { NavSection } from './sections/NavSection'
+import { HeroSection } from './sections/HeroSection'
 
 const page = () => {
   return (
-    <section className='py-8'>
-    <div className='container'>
-      <h1 className='text-3xl font-bold text-center'>My Next JS Boilerplate</h1>
+    <section className='bg-black'>
+    <div>
+      <NavSection/>
+      <HeroSection/>
     </div>
   </section>
   )
