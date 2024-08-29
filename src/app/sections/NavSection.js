@@ -8,7 +8,7 @@ export const NavSection = () => {
          inset-0 bg-gradient-to-b from-white/0 to-transparent backdrop-blur-sm'></div>
       </div> */}
 
-      <div class='gradient-blur'></div>
+      <div class='gradient-blur fixed'></div>
 
       <div className='fixed z-50 w-full'>
         <div className='container lg:px-10 2xl:px-0'>
