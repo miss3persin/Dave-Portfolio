@@ -21,10 +21,49 @@
     @apply transition-transform duration-300 ease-in-out;
   }
 
-  .custom-bg {
+  .hero-bg {
     background-image: url('/hero-bgbg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .my-custom-bg {
+    background-image: url('/NoiseTexture.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .my-custom-max-width {
+    max-width: 25.8rem;
+  }
+
+
+
+.gradient-blur {
+  height: 162px;
+  overflow: hidden;
+  position: fixed;
+  /* top: -15px; */
+  width: 100%;
+  z-index: 40;
+  /* Blur and transparency effect */
+  -webkit-mask-image: linear-gradient(to bottom,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(0, 0, 0, 0.9) 15%,
+  rgba(0, 0, 0, 0.7) 30%,
+  rgba(0, 0, 0, 0.5) 45%,
+  rgba(0, 0, 0, 0.3) 60%,
+  rgba(0, 0, 0, 0.1) 75%,
+  transparent 100%);
+  mask-image: linear-gradient(to bottom,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(0, 0, 0, 0.9) 15%,
+  rgba(0, 0, 0, 0.7) 30%,
+  rgba(0, 0, 0, 0.5) 45%,
+  rgba(0, 0, 0, 0.3) 60%,
+  rgba(0, 0, 0, 0.1) 75%,
+  transparent 100%);
+  backdrop-filter: blur(50px) contrast(1.0) brightness(0.8);
+}

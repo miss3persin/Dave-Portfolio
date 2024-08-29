@@ -7,7 +7,7 @@ import { SocialLinkBtnComponent } from '../components/SocialLinkBtnComponent';
 
 export const HeroSection = () => {
   return (
-    <div className='custom-bg w-full'>
+    <div className='hero-bg w-full h-max'>
 
         <div className='container 2xl:px-0 sm:px-10'>
 
@@ -45,6 +45,8 @@ export const HeroSection = () => {
         <SocialLinkBtnComponent text='TWITTER' link=''/>
         <SocialLinkBtnComponent text='DRIBBLE' link=''/>
       </div>
+
+      <div className='h-20'></div>
     </div>
     </div>
   )

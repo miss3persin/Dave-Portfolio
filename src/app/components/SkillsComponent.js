@@ -13,7 +13,7 @@ import w_thing from '/public/w-thing.png'
 
 export const SkillsComponent = () => {
   return (
-    <div className="image-container flex bg-[#282828] px-2.5 py-1 rounded-[15px] gap-1.5 border border-t-[#484848] border-b-[#282828] border-x-[#484848]">
+    <div className="image-container lg:max-w-96 max-w-full flex bg-[#282828] px-2.5 py-1 rounded-[15px] gap-1.5 border border-t-[#484848] border-b-[#282828] border-x-[#484848]">
     <div className="image">
       <Image src={figma} alt="Figma" width={50} height={50} />
     </div>
