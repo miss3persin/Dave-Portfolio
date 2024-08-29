@@ -14,18 +14,18 @@ export const WorkCard = ({
   mainImage // Main image for the project
 }) => {
   const sizeClasses = {
-    small: 'w-1/4 h-1/4',
-    medium: 'w-1/2 h-1/2',
+    small: 'w-1/2 h-[50rem]',
+    medium: 'w-1/2 h-[65rem]',
     large: 'w-3/4 h-3/4',
     full: 'w-full h-full'
   }
 
   return (
-    <div className={`rounded-lg bg-[#1A1A1B] ${sizeClasses[size]}`}>
+    <div className={`rounded-3xl bg-[#1A1A1B] ${sizeClasses[size]}`}>
       <div className='px-10 pt-12'>
-        <div className='mb-4 flex justify-between'>
-          <p className='m-0 text-3xl text-[#DCDCDC]'>{title}</p>
-          <div className='w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12'>
+        <div className='mb-4 flex justify-between gap-10'>
+          <p className='m-0 text-3xl text-[#DCDCDC] max-w-80'>{title}</p>
+          <div className='flex-grow items-center'>
             <Image
               src={logoImage}
               alt={`${title} logo`}
@@ -57,8 +57,8 @@ export const WorkCard = ({
         </div>
       </div>
 
-      <div className='flex items-end justify-end'>
-        <Image src={mainImage} alt={`${title} main`} />
+      <div className='flex items-end justify-end rounded-3xl h-[29.2rem]'>
+        <Image src={mainImage} alt={`${title} main`} className='rounded-3xl'/>
       </div>
     </div>
   )
