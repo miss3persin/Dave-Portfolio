@@ -36,7 +36,7 @@ export const WorksSection = () => {
   // ];
 
   return (
-    <div className='my-custom-bg h-max w-full'>
+    <div className=''>
       <div className='container py-20 sm:px-10 2xl:px-0'>
         <div className='flex justify-between pb-16 items-center'>
           <p className='sm:text-4xl md:text-5xl font-semibold text-[#F5F5DC]'>
