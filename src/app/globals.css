@@ -46,9 +46,9 @@ html {
 
 
 .gradient-blur {
-  height: 200px;
-  overflow: hidden;
   position: fixed !important;
+  height: 200px;
+  /* overflow: hidden; */
   width: 100%;
   z-index: 40;
   -webkit-mask-image: linear-gradient(to bottom,

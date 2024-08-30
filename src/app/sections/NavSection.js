@@ -62,7 +62,7 @@ export const NavSection = () => {
 
   return (
     <section id='nav'>
-      <div className='gradient-blur fixed'></div>
+      <div className='gradient-blur fixed' style={{ position: 'fixed' }}></div>
       <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200" className='fixed z-50 w-full'>
         <div className='container px-10 lg:px-10 2xl:px-0'>
           <div className='flex items-center justify-between pb-10 pt-10 2xl:pb-14 2xl:pt-14'>
