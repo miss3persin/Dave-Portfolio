@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 
 export const NavSection = () => {
@@ -10,13 +12,13 @@ export const NavSection = () => {
 
       <div class='gradient-blur fixed'></div>
 
-      <div className='fixed z-50 w-full'>
-        <div className='container lg:px-10 2xl:px-0'>
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200" className='fixed z-50 w-full'>
+        <div className='container px-10 lg:px-10 2xl:px-0'>
           <div className='flex items-center justify-between pb-10 pt-10 2xl:pb-14 2xl:pt-14'>
             <div className='flex gap-1.5 2xl:gap-2'>
               <p className='text-lg font-semibold text-white 2xl:text-3xl'>
                 Dave Tech
-              </p>{' '}
+              </p>
               <div className='mt-3.5 h-1.5 w-1.5 rounded-full bg-[#FFA051] p-0 2xl:mt-6'></div>
             </div>
 

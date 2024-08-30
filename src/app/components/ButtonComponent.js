@@ -13,9 +13,9 @@ export const ButtonComponent = ({text, link}) => {
     };
 
   return (
-    <button 
+    <button
     onClick={handleClick}
-    className='flex items-center gap-2 bg-[#FFA051] rounded-full font-bold text-md px-6 py-3.5 self-start'>
+    className='flex items-center gap-2 bg-[#FFA051] rounded-full font-bold text-xs sm:text-md px-6 py-3.5 sm:self-start'>
     <p>{text}</p>
     <Image
         src={arrow_btn}

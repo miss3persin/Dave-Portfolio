@@ -15,7 +15,7 @@ export const ButtonComponentAlt = ({text, link}) => {
   return (
     <button 
     onClick={handleClick}
-    className='flex items-center gap-2 rounded-full border border-[#FFA051] text-[#FFA051] font-medium sm:text-sm lg:text-md px-7 py-3 lg:self-auto'>
+    className='flex items-center gap-2 rounded-full border border-[#FFA051] text-[#FFA051] font-medium text-xs sm:text-sm lg:text-md px-7 py-3 lg:self-auto'>
     <p>{text}</p>
     <Image
         src={arrow_btn_alt}

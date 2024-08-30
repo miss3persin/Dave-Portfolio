@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "./components/AOSProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/davesmile.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><AOSProvider>{children}</AOSProvider></body>
     </html>
   );
 }

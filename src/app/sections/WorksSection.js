@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { ButtonComponentAlt } from '../components/ButtonComponentAlt'
@@ -37,12 +39,14 @@ export const WorksSection = () => {
 
   return (
     <div className=''>
-      <div className='container py-20 px-10 2xl:px-0'>
-        <div className='flex justify-between pb-16 items-center'>
-          <p className='sm:text-4xl md:text-5xl font-semibold text-[#F5F5DC]'>
+      <div className='container py-10 sm:py-20 px-10 2xl:px-0'>
+        <div className='flex sm:flex-row flex-col sm:gap-0 gap-6 justify-between pb-10 sm:pb-16 items-center overflow-hidden'>
+          <p data-aos="fade-right" data-aos-duration="1000" className='text-3xl sm:text-4xl md:text-5xl font-semibold text-[#F5F5DC]'>
             Selected works
           </p>
+          <div data-aos="fade-left" data-aos-duration="1000">
           <ButtonComponentAlt text='View All Works' link='' />
+          </div>
         </div>
 
         {/* <div className='flex gap-7'>
@@ -66,41 +70,41 @@ export const WorksSection = () => {
             
           <div className='flex flex-col flex-1 items-center sm:justify-center md:justify-start gap-6'>
 
-          <div className='md:h-[23rem] lg:h-[45rem] xl:h-[50rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className='md:h-[23rem] lg:h-[45rem] xl:h-[50rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
             <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
-              <div className='mb-4 flex justify-between md:flex-col-reverse lg:flex-row md:items-center lg:items-start'>
-                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] md:text-center lg:text-left'>
+              <div className='mb-4 flex justify-between flex-col-reverse sm:flex-row md:flex-col-reverse items-center sm:items-start lg:flex-row md:items-center lg:items-start'>
+                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] text-center sm:text-left md:text-center lg:text-left'>
                   School TimeTable Management System
                 </p>
-                <div className='items-end md:pb-3 lg:pb-0'>
+                <div className='items-end pb-3 sm:pb-0 md:pb-3 lg:pb-0'>
                   <Image
                     src={classOptima}
                     alt='classOptima logo'
                     layout='responsive'
                     // width={195}
                     // height={40}
-                    className='object-cover lg:w-[300px] xl:w-[195px] md:w-[300px]'
+                    className='object-cover lg:w-[300px] xl:w-[195px] w-[300px]'
                   />
                 </div>
               </div>
 
               <div>
-                <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>May 2024 - 3 weeks</p>
-                <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                <p className='mb-4 text-[#595959] text-sm text-center sm:text-left md:text-center lg:text-left'>May 2024 - 3 weeks</p>
+                <div className='mb-4 flex sm:flex-row flex-col gap-2 justify-center sm:justify-start md:justify-center lg:justify-start'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
               </div>
 
-              <div className='flex flex-col md:items-center lg:items-start'>
-                <p className='mb-4 text-[#7D7D7D] text-sm max-w-[31rem] md:text-center lg:text-left'>School TimeTable Management System is an innovative platform designed to streamline the scheduling process for educational institutions.</p>
+              <div className='flex flex-col items-center sm:items-start md:items-center lg:items-start'>
+                <p className='mb-4 text-[#7D7D7D] text-xs sm:text-sm max-w-[31rem] text-center sm:text-left md:text-center lg:text-left'>School TimeTable Management System is an innovative platform designed to streamline the scheduling process for educational institutions.</p>
 
                 <CaseStudyBtn />
 
@@ -117,41 +121,48 @@ export const WorksSection = () => {
             </div>
           </div>
 
-          <div className='md:h-[23rem] lg:h-[55rem] xl:h-[65rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
-            <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
-              <div className='mb-4 flex justify-between md:flex-col-reverse lg:flex-row md:items-center lg:items-start'>
-                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] md:text-center lg:text-left'>
+
+
+
+
+
+
+
+          <div data-aos="fade-up" data-aos-duration="1000" className='md:h-[23rem] lg:h-[55rem] xl:h-[65rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
+          <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
+              <div className='mb-4 flex justify-between flex-col-reverse sm:flex-row md:flex-col-reverse items-center sm:items-start lg:flex-row md:items-center lg:items-start'>
+                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] text-center sm:text-left md:text-center lg:text-left'>
                   School TimeTable Management System
                 </p>
-                <div className='items-end md:pb-3 lg:pb-0'>
+                <div className='items-end pb-3 sm:pb-0 md:pb-3 lg:pb-0'>
                   <Image
                     src={classOptima}
                     alt='classOptima logo'
                     layout='responsive'
                     // width={195}
                     // height={40}
-                    className='object-cover lg:w-[300px] xl:w-[195px] md:w-[300px]'
+                    className='object-cover lg:w-[300px] xl:w-[195px] w-[300px]'
                   />
                 </div>
               </div>
 
               <div>
-                <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>May 2024 - 3 weeks</p>
-                <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                <p className='mb-4 text-[#595959] text-sm text-center sm:text-left md:text-center lg:text-left'>May 2024 - 3 weeks</p>
+                <div className='mb-4 flex sm:flex-row flex-col gap-2 justify-center sm:justify-start md:justify-center lg:justify-start'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
               </div>
 
-              <div className='flex flex-col md:items-center lg:items-start'>
-                <p className='mb-4 text-[#7D7D7D] text-sm max-w-[31rem] md:text-center lg:text-left'>School TimeTable Management System is an innovative platform designed to streamline the scheduling process for educational institutions.</p>
+              <div className='flex flex-col items-center sm:items-start md:items-center lg:items-start'>
+                <p className='mb-4 text-[#7D7D7D] text-xs sm:text-sm max-w-[31rem] text-center sm:text-left md:text-center lg:text-left'>School TimeTable Management System is an innovative platform designed to streamline the scheduling process for educational institutions.</p>
                 <CaseStudyBtn />
               </div>
             </div>
@@ -166,45 +177,59 @@ export const WorksSection = () => {
             </div>
           </div>
 
+
+
+
+
+
+
+
           </div>
 
           <div className='flex flex-col flex-1 items-center sm:justify-center md:justify-start gap-6'>
 
-          <div className='md:h-[23rem] lg:h-[55rem] xl:h-[65rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
-            <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
-              <div className='mb-4 flex justify-between md:flex-col-reverse lg:flex-row md:items-center lg:items-start'>
-                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] md:text-center lg:text-left'>
+
+
+
+
+
+
+
+          <div data-aos="fade-up" data-aos-duration="1000" className='md:h-[23rem] lg:h-[55rem] xl:h-[65rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
+          <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
+              <div className='mb-4 flex justify-between flex-col-reverse sm:flex-row md:flex-col-reverse items-center sm:items-start lg:flex-row md:items-center lg:items-start'>
+                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] text-center sm:text-left md:text-center lg:text-left'>
                   ProcureRex
                 </p>
-                <div className='items-end md:pb-3 lg:pb-0'>
+                <div className='items-end pb-3 sm:pb-0 md:pb-3 lg:pb-0'>
                   <Image
                     src={procureRex}
                     alt='classOptima logo'
                     layout='responsive'
                     // width={195}
                     // height={40}
-                    className='object-cover lg:w-[300px] xl:w-[195px] md:w-[300px]'
+                    className='object-cover lg:w-[300px] xl:w-[195px] w-[300px]'
                   />
                 </div>
               </div>
 
               <div>
-                <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>Mar 2024 - 3 months</p>
-                <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                <p className='mb-4 text-[#595959] text-sm text-center sm:text-left md:text-center lg:text-left'>Mar 2024 - 3 months</p>
+                <div className='mb-4 flex sm:flex-row flex-col gap-2 justify-center sm:justify-start md:justify-center lg:justify-start'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
               </div>
 
-              <div className='flex flex-col md:items-center lg:items-start'>
-                <p className='mb-4 text-[#7D7D7D] text-sm max-w-[31rem] md:text-center lg:text-left'>ProcureRex is a platform designed to connect suppliers to companies needing their goods and services.</p>
+              <div className='flex flex-col items-center sm:items-start md:items-center lg:items-start'>
+                <p className='mb-4 text-[#7D7D7D] text-xs sm:text-sm max-w-[31rem] text-center sm:text-left md:text-center lg:text-left'>ProcureRex is a platform designed to connect suppliers to companies needing their goods and services.</p>
                 <CaseStudyBtn />
               </div>
             </div>
@@ -219,41 +244,49 @@ export const WorksSection = () => {
             </div>
           </div>
 
-          <div className='md:h-[23rem] lg:h-[45rem] xl:h-[50rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
-            <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
-              <div className='mb-4 flex justify-between md:flex-col-reverse lg:flex-row md:items-center lg:items-start'>
-                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] md:text-center lg:text-left'>
+
+
+
+
+
+
+
+
+          <div data-aos="fade-up" data-aos-duration="1000" className='md:h-[23rem] lg:h-[45rem] xl:h-[50rem] w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start py-10 md:py-0'>
+          <div className='px-10 md:pt-10 lg:pt-12 md:pb-10 lg:pb-0'>
+              <div className='mb-4 flex justify-between flex-col-reverse sm:flex-row md:flex-col-reverse items-center sm:items-start lg:flex-row md:items-center lg:items-start'>
+                <p className='m-0 lg:max-w-72 xl:max-w-80 lg:text-2xl xl:text-3xl text-[#DCDCDC] text-center sm:text-left md:text-center lg:text-left'>
                   Fintech App
                 </p>
-                <div className='items-end md:pb-3 lg:pb-0'>
+                <div className='items-end pb-3 sm:pb-0 md:pb-3 lg:pb-0'>
                   <Image
                     src={finova}
                     alt='classOptima logo'
                     layout='responsive'
                     // width={195}
                     // height={40}
-                    className='object-cover lg:w-[300px] xl:w-[195px] md:w-[300px]'
+                    className='object-cover lg:w-[300px] xl:w-[195px] w-[300px]'
                   />
                 </div>
               </div>
 
               <div>
-                <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>Mar 2024 - A week</p>
-                <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                <p className='mb-4 text-[#595959] text-sm text-center sm:text-left md:text-center lg:text-left'>Mar 2024 - A week</p>
+                <div className='mb-4 flex sm:flex-row flex-col gap-2 justify-center sm:justify-start md:justify-center lg:justify-start'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] text-center sm:text-left p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
               </div>
 
-              <div className='flex flex-col md:items-center lg:items-start'>
-                <p className='mb-4 text-[#7D7D7D] text-sm max-w-[31rem] md:text-center lg:text-left'>ProcureRex is a platform designed to connect suppliers to companies needing their goods and services.</p>
+              <div className='flex flex-col items-center sm:items-start md:items-center lg:items-start'>
+                <p className='mb-4 text-[#7D7D7D] text-xs sm:text-sm max-w-[31rem] text-center sm:text-left md:text-center lg:text-left'>ProcureRex is a platform designed to connect suppliers to companies needing their goods and services.</p>
                 <CaseStudyBtn />
               </div>
             </div>
@@ -268,11 +301,18 @@ export const WorksSection = () => {
             </div>
           </div>
 
-          </div>
+
+
+
+
+
+
 
           </div>
 
-          <div className='md:flex items-center justify-center hidden'>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" className='md:flex items-center justify-center hidden'>
 
           <div className='md:h-[23rem] lg:h-[27rem] xl:h-[30rem] md:w-[22rem] lg:w-full rounded-3xl bg-[#1A1A1B] flex flex-col md:justify-center lg:justify-start'>
 
