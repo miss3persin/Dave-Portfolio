@@ -7,11 +7,11 @@ import { SocialLinkBtnComponent } from '../components/SocialLinkBtnComponent';
 
 export const HeroSection = () => {
   return (
-    <div className='hero-bg w-full h-max'>
+    <div className='hero-bg w-full h-lvh'>
 
-        <div className='container 2xl:px-0 sm:px-10'>
+        <div className='container 2xl:px-0 px-10 flex flex-col h-lvh justify-center'>
 
-      <div className='text-[#F5F5DC] text-3xl sm:text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl font-bold pt-40 2xl:pt-60 mb-7'>
+      <div className='text-[#F5F5DC] text-2xl md:text-4xl lg:text-[3.6rem] 2xl:text-7xl font-bold pt-32 2xl:pt-60 mb-7'>
         <div className='flex items-center 2xl:mb-4'>
           Passionate  <span className='border border-[#FFA051] p-2 ml-1 2xl:ml-2 2xl:mr-4 relative'>
              <div className='w-1.5 h-1 bg-[#FFA051] absolute -top-1 -left-1.5'></div>

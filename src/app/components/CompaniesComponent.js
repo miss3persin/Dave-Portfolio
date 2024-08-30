@@ -12,7 +12,7 @@ export const CompaniesComponent = () => {
   return (
     <div className="flex items-center lg:pl-0 lg:gap-14 2xl:gap-20 lg:pr-48 2xl:pr-0 px-10 gap-5 md:px-10 md:gap-10">
     <div className="image">
-      <Image src={mercedes} alt="mercedes" width={262} height={52} className='lg:pt-12 pt-7 md:pt-6'/>
+      <Image src={mercedes} alt="mercedes" width={262} height={52} className='lg:pt-12 pt-4 md:pt-6'/>
     </div>
     <div className="image">
       <Image src={procurerex} alt="procurerex" width={177} height={44}  />

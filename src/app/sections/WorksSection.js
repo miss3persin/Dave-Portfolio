@@ -37,7 +37,7 @@ export const WorksSection = () => {
 
   return (
     <div className=''>
-      <div className='container py-20 sm:px-10 2xl:px-0'>
+      <div className='container py-20 px-10 2xl:px-0'>
         <div className='flex justify-between pb-16 items-center'>
           <p className='sm:text-4xl md:text-5xl font-semibold text-[#F5F5DC]'>
             Selected works
@@ -87,13 +87,13 @@ export const WorksSection = () => {
               <div>
                 <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>May 2024 - 3 weeks</p>
                 <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
@@ -138,13 +138,13 @@ export const WorksSection = () => {
               <div>
                 <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>May 2024 - 3 weeks</p>
                 <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
@@ -191,13 +191,13 @@ export const WorksSection = () => {
               <div>
                 <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>Mar 2024 - 3 months</p>
                 <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>
@@ -240,13 +240,13 @@ export const WorksSection = () => {
               <div>
                 <p className='mb-4 text-[#595959] text-sm md:text-center lg:text-left'>Mar 2024 - A week</p>
                 <div className='mb-4 flex gap-2 md:justify-center lg:justify-start'>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     UI & UX Design
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     User Research
                   </p>
-                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 md:text-[8px] lg:text-xs text-[#838383]'>
+                  <p className='rounded-full bg-[#3B3B3B] p-1 px-3 text-[8px] lg:text-xs text-[#838383]'>
                     WebApp
                   </p>
                 </div>

@@ -27,7 +27,7 @@ export const TestimonialSection = () => {
           </p>
 
           <div className='flex items-center gap-4'>
-            <div>
+            <div className='hidden lg:flex lg:flex-col'>
               <Image
                 src={HR_assist}
                 alt='HR Assistant'
