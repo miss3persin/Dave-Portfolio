@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
-import markerImage from '/Public/markerimage.png'
+import markerImage from '/public/markerimage.png'
 import { HiMenu, HiX } from 'react-icons/hi';
 
 export const NavSection = () => {
