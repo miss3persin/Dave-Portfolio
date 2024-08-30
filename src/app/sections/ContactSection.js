@@ -6,6 +6,7 @@ import { SocialLinkBtnComponent } from '../components/SocialLinkBtnComponent'
 
 export const ContactSection = () => {
   return (
+    <section id='contact'>
     <div className='container py-28 px-10 2xl:px-0'>
       <div className='pb-14 flex flex-col items-center md:items-start'>
         <p data-aos="fade-right" data-aos-duration="1000" className='pb-8 text-3xl sm:text-6xl text-center md:text-left font-semibold leading-tight tracking-wider text-white lg:leading-normal'>
@@ -16,8 +17,7 @@ export const ContactSection = () => {
         </div>
       </div>
 
-      {/* <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" className='flex-col md:flex-row flex justify-between items-center'> */}
-      <div className='flex-col md:flex-row flex justify-between items-center'>
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" className='flex-col md:flex-row flex justify-between items-center'>
         <div>
           <p className='pb-4 text-base sm:text-xl text-center md:text-left font-light text-white underline [text-decoration-thickness:1.3px] [text-underline-offset:5px]'>
             Daveasukelly@gmail.com
@@ -34,5 +34,6 @@ export const ContactSection = () => {
         </div>
       </div>
     </div>
+    </section>
   )
 }

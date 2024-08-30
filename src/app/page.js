@@ -8,7 +8,6 @@ import { TestimonialSection } from './sections/TestimonialSection'
 import { ContactSection } from './sections/ContactSection'
 import { FooterSection } from './sections/FooterSection'
 
-
 const page = () => {
   return (
     <section className='bg-[#0E0D0F]'>

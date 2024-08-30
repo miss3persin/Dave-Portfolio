@@ -7,7 +7,7 @@ import { SkillsComponent } from '../components/SkillsComponent';
 
 export const AboutSection = () => {
   return (
-
+    <section id='about'>
     <div className='container flex items-center px-10 sm:px-20 py-20 sm:py-40 lg:py-52 justify-center gap-28 relative'>
 
         <div data-aos="fade-right" data-aos-duration="1000" className='absolute lg:static lg:block sm:top-[12.5rem] sm:right-[9rem] hidden'>
@@ -26,5 +26,6 @@ export const AboutSection = () => {
         </div>
 
     </div>
+    </section>
   )
 }

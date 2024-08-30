@@ -38,7 +38,7 @@ export const WorksSection = () => {
   // ];
 
   return (
-    <div className=''>
+    <section id="projects">
       <div className='container py-10 sm:py-20 px-10 2xl:px-0'>
         <div className='flex sm:flex-row flex-col sm:gap-0 gap-6 justify-between pb-10 sm:pb-16 items-center overflow-hidden'>
           <p data-aos="fade-right" data-aos-duration="1000" className='text-3xl sm:text-4xl md:text-5xl font-semibold text-[#F5F5DC]'>
@@ -373,6 +373,6 @@ export const WorksSection = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 }
