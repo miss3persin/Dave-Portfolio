@@ -131,7 +131,7 @@ export const NavSection = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={`md:hidden absolute top-24 left-0 right-0 bg-[#0E0D0F] px-4 pb-14 pt-6 h-dvh flex flex-col items-center justify-evenly transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-[600ms]`}>
+            <div className={`md:hidden absolute top-24 left-0 right-0 bg-[#0E0D0F] px-4 pb-14 pt-6 h-svh flex flex-col items-center justify-evenly transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-[600ms]`}>
               <ul className='flex flex-col items-center gap-12 text-lg font-light text-[#FFFFFF]'>
                 <li 
                   data-section="home" 
