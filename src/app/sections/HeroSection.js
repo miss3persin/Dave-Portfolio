@@ -15,7 +15,7 @@ export const HeroSection = () => {
 
       <section id='home'>
 
-        <div className='container 2xl:px-0 px-10 flex flex-col h-lvh justify-center'>
+        <div className='container 2xl:px-0 px-10 flex flex-col h-dvh md:h-lvh justify-center'>
 
       <div className='text-[#F5F5DC] text-[0.9rem] flex flex-col lg:gap-4 items-center sm:items-start sm:text-3xl md:text-4xl lg:text-[3.5rem] 2xl:text-7xl font-bold pt-32 2xl:pt-60 mb-7'>
         <div className='flex items-center 2xl:mb-4' data-aos="fade-right" data-aos-duration="1000">
