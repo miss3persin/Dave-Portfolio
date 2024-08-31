@@ -17,7 +17,7 @@ export const HeroSection = () => {
 
         <div className='container 2xl:px-0 px-10 flex flex-col h-lvh justify-center'>
 
-      <div className='text-[#F5F5DC] text-[0.9rem] flex flex-col lg:gap-4 items-center sm:items-start sm:text-3xl md:text-4xl lg:text-[3.6rem] 2xl:text-7xl font-bold pt-32 2xl:pt-60 mb-7'>
+      <div className='text-[#F5F5DC] text-[0.9rem] flex flex-col lg:gap-4 items-center sm:items-start sm:text-3xl md:text-4xl lg:text-[3.5rem] 2xl:text-7xl font-bold pt-32 2xl:pt-60 mb-7'>
         <div className='flex items-center 2xl:mb-4' data-aos="fade-right" data-aos-duration="1000">
           Passionate  <span className='border border-[#FFA051] p-[0.1rem] sm:p-2 lg:py-4 lg:mr-2 ml-1 2xl:ml-2 2xl:mr-4 relative'>
              <div className='w-1.5 h-1 bg-[#FFA051] absolute -top-1 -left-1.5'></div>
